@@ -8,6 +8,16 @@
     <title>Ragu Ecommerce</title>
     <script src="dist/ragu-dom.js"></script>
     <link rel="stylesheet" href="styles/main.css">
+
+    <script>
+        window.addEventListener('show-cart', () => {
+          document.getElementById('main-component').setAttribute('src', 'https://ragu-cart-vuejs.herokuapp.com/components/cart-list');
+        });
+
+        window.addEventListener('show-catalog', () => {
+          document.getElementById('main-component').setAttribute('src', 'http://localhost:3101/components/featured-products');
+        });
+    </script>
 </head>
 <body>
     <header class="ecommerce-header">
@@ -17,6 +27,6 @@
         </div>
     </header>
 
-    <ragu-component src="https://ragu-catalog-react.herokuapp.com/components/featured-products"></ragu-component>
+    <ragu-component id="main-component" src="https://ragu-catalog-react.herokuapp.com/components/featured-products"></ragu-component>
 </body>
 </html>
