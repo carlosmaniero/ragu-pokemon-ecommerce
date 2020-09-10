@@ -7,9 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ragu Ecommerce</title>
     <script src="dist/ragu-dom.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <ragu-component src="https://ragu-cart-vuejs.herokuapp.com/components/cart"></ragu-component>
+    <header class="ecommerce-header">
+        <h1>Ragu Pokémon Ecommerce</h1>
+        <div class="ecommerce-header__cart_count">
+            <ragu-component src="https://ragu-cart-vuejs.herokuapp.com/components/cart"></ragu-component>
+        </div>
+    </header>
+
     <ragu-component src="https://ragu-catalog-react.herokuapp.com/components/featured-products"></ragu-component>
 </body>
 </html>
