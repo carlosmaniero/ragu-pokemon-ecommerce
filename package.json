@@ -1,17 +1,14 @@
 {
   "name": "ecommerce",
   "scripts": {
-    "build": "webpack",
     "start": "static-server -p $PORT",
-    "dev": "yarn build && PORT=9000 yarn start"
+    "dev": "PORT=9000 yarn start"
   },
   "devDependencies": {
     "ragu-dom": "^0.0.5",
     "ts-loader": "^8.0.3",
     "ts-node": "^9.0.0",
-    "typescript": "^4.0.2",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "typescript": "^4.0.2"
   },
   "dependencies": {
     "static-server": "^2.2.1"
